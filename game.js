@@ -20,6 +20,7 @@ $(".btn").click(function(event) {
 // User keypress - triggers the game
 $("body").keypress(function(event) {
   if (level === 0) {
+    userClickedPattern = [];
     nextSequence();
     $("#level-title").text("Level " + level);
   }
